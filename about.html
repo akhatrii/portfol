@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>About — Arjun Khatri Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About Arjun Khatri — Computer Science student at Texas A&M University–Commerce (May 2026), Java/Python, SDLC fundamentals, consultancy background.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="logo" href="index.html">AK</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a aria-current="page" href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Page Intro -->
+      <header class="page-header">
+        <h1>About Me</h1>
+        <p>Computer Science student with a practical business background—comfortable with Java/Python and SDLC basics, and energized by shipping useful software.</p>
+      </header>
+
+      <!-- Quick Profile -->
+      <section class="item" aria-labelledby="profile">
+        <h2 id="profile">Profile</h2>
+        <ul>
+          <li><strong>Name:</strong> Arjun Khatri</li>
+          <li><strong>Location:</strong> Irving, TX 75062</li>
+          <li><strong>Email:</strong> <a href="mailto:kathriarjun6@gmail.com">kathriarjun6@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+14693586771">+1 (469) 358-6771</a></li>
+        </ul>
+      </section>
+
+      <!-- Objective -->
+      <section class="item" aria-labelledby="objective">
+        <h2 id="objective">Objective</h2>
+        <p>
+          Junior year student pursuing a Bachelor’s in Computer Science at Texas A&amp;M University–Commerce (Expected May 2026).
+          I bring fundamentals in Java and Python plus a hands-on consultancy background. My goal is to contribute to real software projects
+          where I can grow through code reviews, clean design, and disciplined delivery.
+        </p>
+      </section>
+
+      <!-- What I Bring -->
+      <section class="item" aria-labelledby="value">
+        <h2 id="value">What I Bring</h2>
+        <ul>
+          <li><strong>Programming fundamentals:</strong> Java &amp; Python, problem solving, readable code, and version-controlled workflows.</li>
+          <li><strong>SDLC awareness:</strong> requirements to release basics; comfort collaborating across roles.</li>
+          <li><strong>Business sense:</strong> consultancy and entrepreneurship experience—translating needs into action and results.</li>
+          <li><strong>Work ethic:</strong> reliable, organized, and calm under deadlines; strong time management and teamwork.</li>
+        </ul>
+      </section>
+
+      <!-- Education -->
+      <section class="item" aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <article>
+          <h3>Texas A&amp;M University–Commerce</h3>
+          <p><strong>Program:</strong> Bachelor of Computer Science</p>
+          <p><strong>Expected Graduation:</strong> May 2026</p>
+        </article>
+      </section>
+
+      <!-- Experience Summary (from resume, condensed for About page) -->
+      <section class="item" aria-labelledby="experience">
+        <h2 id="experience">Experience Snapshot</h2>
+        <article>
+          <h3>Co-founder &amp; Marketing Specialist — Global Consultancy, Nepal</h3>
+          <p class="meta">Feb 2019 – Aug 2021</p>
+          <ul>
+            <li>Co-founded and helped operate a consultancy focused on career guidance and educational services.</li>
+            <li>Drove marketing and client outreach; expanded client base and increased annual revenue by <strong>~50%</strong>.</li>
+            <li>Shaped promotional strategies and supported day-to-day operations to keep quality high.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Skills (aligned to resume categories) -->
+      <section class="item" aria-labelledby="skills">
+        <h2 id="skills">Skills (Overview)</h2>
+        <div class="grid two">
+          <div class="card">
+            <h3>Programming</h3>
+            <ul>
+              <li>Java (fundamentals)</li>
+              <li>Python (fundamentals)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Technical</h3>
+            <ul>
+              <li>Basic understanding of the Software Development Life Cycle (SDLC)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Business</h3>
+            <ul>
+              <li>Consultancy experience &amp; entrepreneurship</li>
+              <li>Market research, business development</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Professional</h3>
+            <ul>
+              <li>Leadership &amp; time management</li>
+              <li>Collaboration in fast-paced environments</li>
+              <li>Customer service</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Awards -->
+      <section class="item" aria-labelledby="awards">
+        <h2 id="awards">Awards</h2>
+        <ul>
+          <li>Active youth blood donor award (2018)</li>
+        </ul>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="item" aria-labelledby="cta">
+        <h2 id="cta">What’s Next</h2>
+        <p>
+          I’m looking for an entry-level software engineering role where I can contribute immediately while growing through
+          mentorship and real-world problem solving. If that sounds like your team, reach out via
+          <a href="mailto:kathriarjun6@gmail.com">email</a> or the <a href="contact.html">contact page</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Arjun Khatri.</p>
+    </footer>
+
+    <script>
+      const btn = document.querySelector('.nav-toggle');
+      const menu = document.getElementById('menu');
+      btn?.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>

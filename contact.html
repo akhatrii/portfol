@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contact — Arjun Khatri Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="logo" href="index.html">AK</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <header class="page-header">
+        <h1>Contact</h1>
+        <p>Let’s connect.</p>
+      </header>
+
+      <section class="contact">
+        <div class="card">
+          <h2>Direct</h2>
+          <ul class="contact-list">
+            <li><strong>Address:</strong> 3739 Valley View Lane, Irving, TX 75062</li>
+            <li><strong>Phone:</strong> <a href="tel:+14693586771">+1 (469) 358-6771</a></li>
+            <li><strong>Email:</strong> <a href="mailto:kathriarjun6@gmail.com">kathriarjun6@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Message</h2>
+          <form class="form" action="#" method="post" onsubmit="alert('This is a static demo form. Connect an endpoint to handle submissions.'); return false;">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" rows="5" required></textarea>
+
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Arjun Khatri.</p>
+    </footer>
+  </body>
+</html>
