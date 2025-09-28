@@ -1,79 +1,144 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Arjun Khatri — Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0f172a">
-    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <meta name="description" content="Portfolio of Arjun Khatri - Computer Science student at Texas A&M University–Commerce.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Portfolio website for Arjun Khatri, CS student at Texas A&M University–Commerce, aspiring software engineer.">
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
     <header class="header">
-      <nav class="nav">
-        <a class="logo" href="index.html">AK</a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
-        <ul id="menu" class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <nav class="nav">
+            <a href="index.html" class="logo">Arjun Khatri</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+                ☰
+            </button>
+            <ul id="menu" class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">Bio</a></li>
+                <li><a href="experience.html">Work</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-      <section class="hero">
-        <h1>Arjun Khatri</h1>
-        <p class="tagline">Computer Science @ Texas A&amp;M University–Commerce • Aspiring Software Engineer</p>
-        <div class="quickfacts">
-          <span>Irving, TX</span>
-          <span>Graduation: May 2026</span>
-          <span>Java • Python • SDLC</span>
-        </div>
-        <div class="cta">
-          <a class="btn" href="about.html">About</a>
-          <a class="btn ghost" href="experience.html">Experience</a>
-          <a class="btn ghost" href="skills.html">Skills</a>
-          <a class="btn" href="contact.html">Contact</a>
-        </div>
-      </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div>
+                        <img src="photo1.jpg" alt="Arjun Khatri" class="profile-photo" onerror="this.style.display='none'">
+                    </div>
+                    <div class="hero-info">
+                        <h1>Arjun Khatri</h1>
+                        <p class="tagline">
+                            Computer Science Student<br>
+                            Texas A&M University–Commerce
+                        </p>
+                        <div class="quickfacts">
+                            <span>Irving, TX</span>
+                            <span>Java and Python enthusiast</span>
+                        </div>
+                        <div class="cta">
+                            <a href="about.html" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <section class="cards">
-        <article class="card">
-          <h3>Objective</h3>
-          <p>Junior CS student seeking an entry-level software engineering role to apply programming fundamentals, SDLC basics, and an entrepreneurial mindset on real projects.</p>
-          <a class="more" href="about.html">Read more →</a>
-        </article>
-        <article class="card">
-          <h3>Experience</h3>
-          <p>Co-founded a consultancy in Nepal, led marketing, grew revenue by 50%, and supported operations.</p>
-          <a class="more" href="experience.html#work">See details →</a>
-        </article>
-        <article class="card">
-          <h3>Community</h3>
-          <p>Board Member at Thunder Youth Football Club; active blood donor with the Nepal Red Cross Society.</p>
-          <a class="more" href="experience.html#community">Explore →</a>
-        </article>
-      </section>
+      
+        <section class="container">
+            <div class="cards">
+                <article class="card">
+                    <h3>About Me</h3>
+                    <p>
+                        Junior Computer Science student passionate about software development. 
+                        Learning Java, Python, and software engineering principles.
+                    </p>
+                    <a href="about.html" class="more">Read more →</a>
+                </article>
+                
+                <article class="card">
+                    <h3>Experience</h3>
+                    <p>
+                        Co-founded a consultancy in Nepal, gaining experience in business 
+                        development, marketing, and leadership.
+                    </p>
+                    <a href="experience.html" class="more">View work →</a>
+                </article>
+                
+                <article class="card">
+                    <h3>Skills</h3>
+                    <p>
+                        Developing skills in Java and Python programming, software development 
+                        lifecycle, and problem-solving.
+                    </p>
+                    <a href="skills.html" class="more">See skills →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Quick Info -->
+        <section class="container">
+            <div class="item">
+                <h2>Quick Facts</h2>
+                <div class="grid two">
+                    <div>
+                        <h3>Education</h3>
+                        <p><strong>Texas A&M University–Commerce</strong></p>
+                        <p>Bachelor of Computer Science</p>
+                        <p>Expected Graduation: May 2026</p>
+                    </div>
+                    <div>
+                        <h3>Current Focus</h3>
+                        <p>Learning software development fundamentals</p>
+                        <p>Building projects in Java and Python</p>
+                        <p>Seeking internship opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-      <p>&copy; 2025 Arjun Khatri.</p>
+        <div class="container">
+            <p>&copy; 2025 Arjun Khatri. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
-      const btn = document.querySelector('.nav-toggle');
-      const menu = document.getElementById('menu');
-      btn?.addEventListener('click', () => {
-        const open = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!open));
-        menu.classList.toggle('open');
-      });
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const menu = document.getElementById('menu');
+        
+        navToggle?.addEventListener('click', () => {
+            const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!isOpen));
+            menu.classList.toggle('open');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
     </script>
-  </body>
+</body>
 </html>

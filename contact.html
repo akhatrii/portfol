@@ -1,62 +1,181 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Contact — Arjun Khatri Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Arjun Khatri</title>
+    <meta name="description" content="Get in touch with Arjun Khatri - Computer Science student.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Header -->
     <header class="header">
-      <nav class="nav">
-        <a class="logo" href="index.html">AK</a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
-        <ul id="menu" class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <nav class="nav">
+            <a href="index.html" class="logo">Arjun Khatri</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+                ☰
+            </button>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Bio</a></li>
+                <li><a href="experience.html">Work</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-      <header class="page-header">
-        <h1>Contact</h1>
-        <p>Let’s connect.</p>
-      </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact</h1>
+                <p>
+                    Let's connect! I'm always interested in meeting new people and discussing opportunities.
+                </p>
+            </div>
+        </section>
 
-      <section class="contact">
-        <div class="card">
-          <h2>Direct</h2>
-          <ul class="contact-list">
-            <li><strong>Address:</strong> 3739 Valley View Lane, Irving, TX 75062</li>
-            <li><strong>Phone:</strong> <a href="tel:+14693586771">+1 (469) 358-6771</a></li>
-            <li><strong>Email:</strong> <a href="mailto:kathriarjun6@gmail.com">kathriarjun6@gmail.com</a></li>
-          </ul>
-        </div>
+        <!-- Contact Information -->
+        <section class="container">
+            <div class="contact">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>
+                        I'm always open to discussing new opportunities, collaborations, 
+                        or just having a conversation about technology and software development.
+                    </p>
+                    
+                    <h3>Contact Information</h3>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> <a href="mailto:kathriarjun6@gmail.com">kathriarjun6@gmail.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+14693586771">(469) 358-6771</a></li>
+                        <li><strong>Location:</strong> Irving, TX 75062</li>
+                        <li><strong>University:</strong> Texas A&M University–Commerce</li>
+                    </ul>
+                    
+                    <h3>Best Times to Reach Me</h3>
+                    <p>
+                        I typically respond to emails within 24 hours. For phone calls, 
+                        evenings and weekends work best due to my class schedule.
+                    </p>
+                </div>
 
-        <div class="card">
-          <h2>Message</h2>
-          <form class="form" action="#" method="post" onsubmit="alert('This is a static demo form. Connect an endpoint to handle submissions.'); return false;">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required>
+                <div class="form">
+                    <h2>Send a Message</h2>
+                    <form action="#" method="post" onsubmit="alert('Thank you for your message! I\'ll get back to you soon.'); return false;">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required>
+        <!-- Additional Info -->
+        <section class="container">
+            <div class="item">
+                <h2>What I'm Looking For</h2>
+                <div class="grid two">
+                    <div>
+                        <h3>Internship Opportunities</h3>
+                        <p>
+                            I'm actively seeking software engineering internships where I can 
+                            apply my programming skills and learn from experienced developers.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Study Groups & Projects</h3>
+                        <p>
+                            Always interested in connecting with fellow CS students for 
+                            study groups, coding projects, and knowledge sharing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <label for="msg">Message</label>
-            <textarea id="msg" name="message" rows="5" required></textarea>
-
-            <button class="btn" type="submit">Send</button>
-          </form>
-        </div>
-      </section>
+        <!-- Quick Links -->
+        <section class="container">
+            <div class="item text-center">
+                <h2>Quick Links</h2>
+                <div class="cta">
+                    <a href="mailto:kathriarjun6@gmail.com" class="btn">Email Me</a>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-      <p>&copy; 2025 Arjun Khatri.</p>
+        <div class="container">
+            <p>&copy; 2025 Arjun Khatri. All rights reserved.</p>
+        </div>
     </footer>
-  </body>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const menu = document.getElementById('menu');
+        
+        navToggle?.addEventListener('click', () => {
+            const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!isOpen));
+            menu.classList.toggle('open');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Simple form validation
+        const form = document.querySelector('form');
+        form?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && subject && message) {
+                alert('Thank you for your message, ' + name + '! I\'ll get back to you soon.');
+                form.reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
 </html>
